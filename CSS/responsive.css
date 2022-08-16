@@ -1,0 +1,70 @@
+@media screen and (max-width: 1200px) {
+    .nav-links a {
+        font-size: 14px;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-links {
+        position: fixed;
+        inset: 0 0 0 38%;
+        flex-direction: column;
+        padding: min(30vh, 8rem) 0rem;
+        margin: 0px !important;
+        align-items: center;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+    }
+    .nav-links[data-visible="true"] {
+        transform: translateX(0);
+    }
+    .logo {
+        width: 7vw;
+        margin: 8px 0px 0px 10px;
+    }
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        background:url(../Images/hamburger-menu.svg) no-repeat;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+    .mobile-nav-toggle[aria-expanded='true'] {
+        background: url(../Images/close.svg) no-repeat;
+    }
+    section {
+        padding: 0 20px;
+    }
+    .title {
+        font-size: 2rem;
+        margin: 20vh 0 5vh 0;
+      }
+      .slide-text {
+        width: 100%;
+        margin-left: 20px;
+      }
+      #home-slider {
+        flex-direction: column;
+      }
+    
+      .btn-common {
+        font-size: 20px;
+      }
+      #gif {
+        position: relative;
+        height: 40%;
+        width: auto;
+      }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        width: 13vw;
+    }
+}
