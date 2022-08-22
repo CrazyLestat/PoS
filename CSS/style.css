@@ -85,6 +85,12 @@ header {
   color: #E3E0C5;
   letter-spacing: 2px;
 }
+.fa-wallet {
+  font-size: 1.7rem;
+}
+.fa-wallet:hover {
+  font-size: 2rem;
+}
 .nav-links a:hover {
   color: #60F7B4;
   text-decoration: underline overline 3px;
