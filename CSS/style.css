@@ -196,7 +196,7 @@ section {
   bottom: 0;
   right: 0;
 }
-.slide-text p {
+p {
   font-size: 18px;
   font-weight: 400;
   font-family: 'Mali', cursive;
@@ -206,7 +206,6 @@ section {
   font-size: 25px;
   color: #60F7B4;
   border: none;
-  font-family: 'adventureregular', Georgia, 'Times New Roman', Times, serif;
   font-weight: 300;
   padding: 10px 25px;
   text-decoration: none;
