@@ -173,7 +173,13 @@ section {
   color: #E3E0C5;
   font-size: 30px;
   font-weight: bold;
-  margin: 0 60px 0 120px;
+  margin: 0 60px 0 120px; 
+  opacity: 0;
+  transition: opacity 1.8s ease-out;
+}
+.is-visible {
+  opacity: 1;
+  transition: opacity 1.8s ease-out;
 }
 
 /***************************
