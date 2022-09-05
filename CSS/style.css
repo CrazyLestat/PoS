@@ -48,9 +48,12 @@ body {
 
 .column, .row {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .column {
   flex-direction: column;
+  position: relative;
 }
 
 
@@ -175,11 +178,12 @@ section {
   font-weight: bold;
   margin: 0 60px 0 120px; 
   opacity: 0;
-  transition: opacity 1.8s ease-out;
+  
 }
 .is-visible {
   opacity: 1;
-  transition: opacity 1.8s ease-out;
+  transition: opacity 2000ms ease-out;
+  transform: translate3d(0, 6rem, 0);
 }
 
 /***************************
@@ -264,3 +268,49 @@ h4 {
   align-items: flex-end;
 }
 
+/***************************
+*****  GET STARTED  ********
+***************************/
+
+#arrow-starting {
+  width: 75px;
+  height: 65px;
+  fill: #E3E0C5;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+}
+
+#arrow-starting:hover polygon {
+    transition: all .2s ease-out;
+}
+#arrow-starting:hover .arrow-bottom {
+  transform: translateY(-18px);
+}
+#arrow-starting:hover .arrow-top {
+  transform: translateY(18px);
+}
+
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.circle {
+  border: solid #e3e0c5 1px;
+  border-radius: 50%;
+  opacity: 1;
+}
+.glow {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from{
+  text-shadow: 0 0 10px #0fa, 0 0 20px #0fa, 0 0 30px #0fa, 0 0 40px #0fa,0 0 50px #0fa;
+}
+to {
+  text-shadow: 0 0 60px #0fa, 0 0 70px #0fa;
+}
+}

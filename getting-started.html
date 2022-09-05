@@ -51,32 +51,46 @@
     <!--/#header-->
     <main>
       <div class="container">
-        <section>
-          <div>
+        <section class="column">
+          <div class="center">
             <h1 class="title">Get started with Paths of Salvation</h1>
             <p class="fade-in">Begin your Paths of Salvations journey in less than 5 minutes with 3 simple steps:</p>
           </div>
-            <!-- ADD A ARROW POINTING DOWN HERE-->
+          <div>
+            <a href="#wallet">
+              <svg id="arrow-starting">
+              <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+              <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+              <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>
+            </svg></a>
+          </div>
+        </section>
+        <section id="wallet">
+          <div>
+          <h2 class="title glow"><span class="circle">1</span> Connect your wallet</h2>
+          <p>Your favourite wallet can be seamlessly connected with the wallet icon at the top of the page.</p>
+          <p>Don't have a wallet. No worries. Quickly create a wallet with any of the wallets supported by our website.</p>
+        </div>
         </section>
         <section>
-          <h2 class="title">Connect your wallet</h2>
-        </section>
-        <section>
-          <h2 class="title">Wolf vs Planet</h2>
-          <p>Choose the most suitable gamingexperience for you.</p>
+          <div>
+          <h2 class="title"><span class="circle glow">2</span> Wolf or Planet. Your tailored NFT experience!</h2>
+          <p>Choose the most suitable gaming experience for you.</p>
           <h4>Be a player!</h4>
           <p>Own a wolf NFT that gives you instant access to the game where rewards are a mission away.</p>
           <h4>Be an owner!</h4>
           <p>Get in on the virtual real-estate market by owning the gamespace where the wolfs thrive.</p>
+        </div>
         </section>
         <section>
-          <h2 class="title">Play</h2>
+          <h2 class="title"><span class="circle">3</span> Play</h2>
           <p>Stay tuned to find out more information on how this game can be played</p>
           <!--INCLUDE MAYBE A TIMER AGAIN UNTIL THE GAME CAN BE PLAYED-->
         </section>
       </div>
       </main>
       <script src="index.js"></script>
+      <script src="intersection-observer.js"></script>
     </body>
 
 </html>

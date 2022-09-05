@@ -3,7 +3,7 @@ const sections = document.querySelectorAll('section');
 const options = {
     root: null,
     threshold: 0,
-    rootMargin: '-50px'
+    rootMargin: '-200px'
 }
 const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
