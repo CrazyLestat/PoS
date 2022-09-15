@@ -268,6 +268,42 @@ h4 {
   align-items: flex-end;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+}
+input {
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-radius: 30px;
+  margin: 10px 0;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #213E3C;
+  background-color: #E3E0C5;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(250, 252, 242, 0.4);
+  -moz-box-shadow: 0px 0px 15px 10px rgba(240, 252, 242, 0.164);
+  box-shadow: 0px 0px 5px 0px rgba(167, 233, 178, 0.781);
+}
+input[type="submit"] {
+  width: 50%;
+  margin: 10px auto;
+  background-color: #213E3C;
+  color: #e3e0c5;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 20px;
+}
 /***************************
 *****  GET STARTED  ********
 ***************************/
@@ -313,4 +349,15 @@ h4 {
 to {
   text-shadow: 0 0 60px #0fa, 0 0 70px #0fa;
 }
+}
+
+/*******************
+******  404  *******
+********************/
+.image404 {
+  margin-bottom: 60px;
+}
+.error-page {
+  font-size: 2rem;
+  color: #e3e0c5;
 }
