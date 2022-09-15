@@ -304,6 +304,19 @@ footer {
   align-items: center;
   padding: 30px 20px;
 }
+
+.chest {
+  width: 100%;
+  height: auto;
+}
+.vending-machine {
+  width: 100%;
+  height: auto;
+}
+.img-carousel {
+  position: relative;
+  right: 0;
+}
 /***************************
 *****  GET STARTED  ********
 ***************************/
