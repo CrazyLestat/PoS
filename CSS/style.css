@@ -322,29 +322,26 @@ textarea:focus, input:focus{
 .vending-machine {
   width: 100%;
   height: auto;
-  display: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
 }
 .active-img {
-  display: block;
+  opacity: 1;
   z-index: -10;
 }
 
-#button-previous, #button-next {
+#button-previous {
   right: -15px;
   display: block;
   position: absolute;
   background-color: transparent;
   border: none;
   font-size: 30px;
-  color: #e3e0c5
-}
-#button-previous {
-  top: 70vh;
-  transform: translateY(-950%);
-}
-
-#button-next {
-  display: none;
+  color: #e3e0c5;
+  left: 200px;
+  transform: translateY(-20%);
+  opacity: 0;
 }
 .img-carousel {
   position: absolute;
