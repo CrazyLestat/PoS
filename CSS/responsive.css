@@ -48,7 +48,7 @@
       }
       .slide-text {
         width: 100%;
-        margin-left: 20px;
+        margin: 100px 0 50px 0;
       }
       #home-slider {
         flex-direction: column;
@@ -75,11 +75,21 @@
         margin: 0;
         opacity: 1;
     }
+    #home-slider {
+        justify-content: space-between;
+    }
     .metamask-icon {
         margin: 0 auto 30% auto;
     }
     #arrow-starting {
         left: 40%;
+    }
+    #button-next {
+        display: block;
+    }
+    .img-active {
+        position: absolute;
+        display: block;
     }
 }
     
@@ -88,8 +98,8 @@
     .logo {
         width: 13vw;
     }
-    .title {
-        font-size: 1.5rem;
+    .title, h2 {
+        font-size: 1.8rem;
     }
     p {
         font-size: 14px;
@@ -97,4 +107,26 @@
     .temp-wolf {
         height: 35vh;
     }
+    h4 {
+        font-size: 20px;
+    }
+    .slide-text {
+        margin: 50px 0 30px 0;
+      }
 }
+@media (max-height: 700px) and (min-width: 500px) {
+    .title, h2 {
+        font-size: 2.5rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    #gif {
+        height: 30%;
+    }
+}
+

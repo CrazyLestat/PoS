@@ -30,6 +30,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100vh;
+}
 
 body {
   background-color: #0C0C0C;
@@ -37,8 +40,10 @@ body {
   font-family: 'adventureregular';
   overflow-x: hidden;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   color: #e3e0c5;
+  scroll-behavior: smooth;
+  position: relative;
 }
 
 .column, .row {
@@ -53,6 +58,10 @@ body {
 .right {
   text-align: right;
 }
+h2, h4 {
+  letter-spacing: 5px;
+}
+
 
 /***************************
 *****  HEADER  *************
@@ -160,6 +169,7 @@ main {
   overflow-y: scroll;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+  scroll-snap-stop: always;
 }
 .container::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
@@ -167,6 +177,7 @@ main {
 section {
   height: 100%;
   scroll-snap-align: center;
+  scroll-snap-stop: always;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -253,16 +264,11 @@ span {
 .row {
   justify-content: space-around;
   align-items: center;
-  width: 50%;
   height: 100%;
   text-align: center;
 }
 h4 {
   font-size: 1.5rem;
-}
-
-#pack {
-  align-items: flex-end;
 }
 
 form {
@@ -300,10 +306,6 @@ input::placeholder, textarea::placeholder {
 textarea:focus, input:focus{
   outline: none;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-}
 
 .social-icons {
   display: flex;
@@ -313,18 +315,59 @@ footer {
 }
 
 .chest {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
 .vending-machine {
   width: 100%;
   height: auto;
+  display: none;
+}
+.active-img {
+  display: block;
+  z-index: -10;
 }
 
+#button-previous, #button-next {
+  right: -15px;
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  color: #e3e0c5
+}
+#button-previous {
+  top: 70vh;
+  transform: translateY(-950%);
+}
+
+#button-next {
+  display: none;
+}
 .img-carousel {
-  position: relative;
-  right: 0;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  width: 400px;
+}
+.half-section {
+  margin: 0 40vw 0 0;
+}
+
+.overlay-chest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+  display: none;
+}
+.visible {
+  display: block;
 }
 /***************************
 *****  GET STARTED  ********
@@ -477,7 +520,10 @@ to {
 /*******************
 ****** FOOTER ******
 *******************/
-
+footer {
+  position: absolute;
+  bottom: 0;
+}
 .socials {
   color: #60F7B4;
 }
@@ -490,3 +536,5 @@ to {
   width: 200px;
   margin: 20px auto;
 }
+
+

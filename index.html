@@ -62,60 +62,77 @@
         <section id="tiers" class="section2">
           <h2 class="title">Choose your Tier</h2>
           <div class="row">
-            <div class="single-service">
-              <img class="chest" src="Images/chest_closed.png" alt="closed wooden chest with iron details">
+            <div class="single-service" onmouseover="before()" onmouseout="after()">
+              <img class="chest closed iron" src="Images/chest_closed.png" alt="closed wooden chest with iron details">
               <h4>RARE</h4>
             </div>
             <div class="single-service">
-              <img class="chest" src="images/chest_closed_gold.png" alt="closed wooden chest with gold details">
+              <img class="chest closed gold" src="images/chest_closed_gold.png" alt="closed wooden chest with gold details" onmouseover="before()" onmouseout="after()">
               <h4>EPIC</h4>
             </div>
             <div class="single-service">
-              <img class="chest" src="images/chest_closed_Diam.png" alt="closed wooden chest with diamond details">
+              <img src="images/chest_closed_Diam.png" alt="closed wooden chest with diamond details" class="chest closed diamond">
               <h4>LEGENDARY</h4>
             </div>
+            <button id="button-next">&#129178;</button>
           </div>
+          <div class="overlay-chest">
+            <img src="images/chest_open.png" alt="opened wooden chest with iron details" class="chest open iron">
+            <img src="images/chest_open_Gold.png" alt="opened wooden chest with gold details" class="chest open gold">
+            <img src="images/chest_open_Diam.png" alt="opened wooden chest with diamond details" class="chest">
+          </div>
+          <script>
+          function before() {
+            document.getElementsByClassName(".overlay-chest").style.display = "block";
+          }
+          function after() {
+            document.getElementsByClassName(".overlay-chest").style.display = "block";
+          }
+          </script>
         </section>
         <section id="pack">
           <div class="column">
               <h2>Enter the Wolfirions Tribes</h2>
-              <p>Get your Wolfirion NFT and automatically join one of the 5 tribes of the mighty Wolfirions: Renians, Oceans, Leafins, Durkons and Volcators.</p>
+              <p>Get your Wolfirion NFT and automatically join one of the 5 tribes of the mighty Wolfirions: Renians, Okeans, Leafins, Durkons and Volcators.</p>
               <h4>Lead your tribe to glory!</h4>
-              <p>A tribe is as strong as its weakest members. Participate in future Player vs. Player events and increase your tribes notoriety and overall power and reach.</p>
+              <p>A tribe is as strong as its weakest members. Participate in future Player vs. Player events and increase your ​tribe's notoriety and overall power and reach.</p>
           </div>  
         </section>
         <section class="section4">
-          <div>
+          <div class="half">
             <h2>Beyond the expected</h2>
             <p>Go beyond just owning a simple NFT. Own the actual planets on which Wolfirions thrive.</p>
-            <p>The various planets on which the Wolfirions live can vary from the most hospitable places to the most harsh enviroments. Be the ruler of your planet. Decide on the perks found on your planet and gather as many wolf residents as you can. Its all up to you!</p>
+            <p>The various planets on which the Wolfirions live can vary from the most hospitable places to the most harsh environments. Be the ruler of your planet. Decide on the perks found on your planet and gather as many wolf residents as you can. It's all up to you!</p>
           </div>
         </section>
         <section class="section5">
           <div>
             <h2>Play to Earn</h2>
-            <p>Take advanted of the play to earn enviroment on Paths of Salvation. Whetere you are interested in in-game minted objects or virtual land on the metaverse our project incorporates all of this into one.</p>
-            <p>Selling or trading collected/purchased items have never been as easy or safe. Enjoy the benefits of the blockchain P2E enviroment and start monetizing your gaming time.</p>
+            <p>Take advantage of Paths of Salvation's play to earn environment. Whether you are interested in in-game minted objects or virtual land on the metaverse our project incorporates all of this into one.</p>
+            <p>Selling or trading collected/purchased items have never been as easy or safe. Enjoy the benefits of the blockchain P2E environment and start monetizing your gaming time.</p>
           </div>
         </section>
-        <section class="section6 row">
-          <div class="column">
+        <section class="section6">
+          <div class="column half-section">
           <h2>Make use of the right technologies</h2>
-          <p>Our platform uses the ERC-1155 - The MultiToken Standard which is designed to combine non-fungible (ERC-721) and fungible (ERC-20) tokens in a single smart contract. Using ERC-1155 increases your security and decreases the redundant bytecode on the Ethereum blockchain.</p>
-          <p>The Wolfs NFTs will be stored as an ERC-1155 token on Ethereum blockchain and it is hosted on IPFS.</p>
+          <p>Our platform uses the ERC-1155 - The MultiToken Standard which is designed to combine non-fungible (ERC-721) and fungible (ERC-20) tokens in a single smart contract. Using ERC-1155 increases your security and decreases the redundant bytecode on the Polygon blockchain.</p>
+          <p>The Wolfs NFTs will be stored as an ERC-1155 token on Polygon blockchain and it is hosted on IPFS.</p>
         </div>
         <div class="img-carousel">
           <img class="vending-machine" src="images/erc-721.png" alt="">
+          <img src="images/wolfnft.png" alt="" class="vending-machine active-img">
+          <img src="images/planets (1).png" alt="" class="vending-machine">
+          <button id="button-previous">&#129178;</button>
         </div>
         </section>
         <section class="column">
-          <h2>Get in touch</h2>
+        <!--  <h2>Get in touch</h2>
           <form>
             <input type="text" placeholder="e.g. John Smith" />
             <input type="email" placeholder="e.g. john@emails.com "/>
             <textarea placeholder="e.g. I have one question for you. How dare you?" rows="5" cols="33"></textarea>
             <input class="glow" type="submit" value="Submit"/>
-          </form>
+          </form>-->
           <footer>
             <div class="social-icons">
               <a class="socials" href="https://www.instagram.com/theunchainedwolfs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
