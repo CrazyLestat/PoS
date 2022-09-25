@@ -45,12 +45,11 @@ function complete() {
 }
 
 /*CAROUSEL*/
-const next = document.querySelector('.next');
 const previous = document.getElementById('button-previous');
 const imgArr = document.getElementsByClassName("vending-machine")
-const singleService = document.getElementsByClassName(".single-service");
+const chestsDivs = document.getElementsByClassName(".single-service");
 
-function change() {
+function changeImg() {
   if (imgArr[0].classList.contains('active-img')) {
     imgArr[0].classList.remove('active-img');
     imgArr[1].classList.add('active-img');
@@ -64,12 +63,27 @@ function change() {
      imgArr[0].classList.add('active-img');
  }
 }
+
+function changeChest() {
+  if (chestsDivs[0].classList.contains('active')) {
+    chestsDivs[0].classList.remove('active');
+    chestsDivs[1].classList.add('active');
+} 
+ else if (chestsDivs[1].classList.contains('active')) {
+  chestsDivs[1].classList.remove('active');
+  chestsDivs[2].classList.add('active');
+ }
+ else {
+  chestsDivs[2].classList.remove('active');
+  chestsDivs[0].classList.add('active');
+ }
+}
 // Add function on click to change the class of the images so we can see a different picture with each click
 previous.addEventListener('click', () => {
-change()
+  changeChest();
 })
 
-let timer2 = setInterval(change, 4000);
+let timer2 = setInterval(changeImg, 4000);
 
 function complete2() {
   clearInterval(timer2);

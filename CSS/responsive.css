@@ -28,7 +28,7 @@
         display: block;
         position: absolute;
         z-index: 10;
-        background:url(../Images/hamburger-menu.svg) no-repeat;
+        background:url(../images/hamburger-menu.svg) no-repeat;
         width: 2rem;
         border: 0;
         aspect-ratio: 1;
@@ -36,7 +36,7 @@
         right: 2rem;
     }
     .mobile-nav-toggle[aria-expanded='true'] {
-        background: url(../Images/close.svg) no-repeat;
+        background: url(../images/close.svg) no-repeat;
     }
     section {
         padding: 0 20px;
@@ -100,6 +100,7 @@
     #button-previous {
         opacity: 1;
     }
+    
 }
     
 
