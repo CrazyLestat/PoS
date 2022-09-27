@@ -83,14 +83,6 @@
             <img src="images/chest_open_Gold.png" alt="opened wooden chest with gold details" class="chest open gold">
             <img src="images/chest_open_Diam.png" alt="opened wooden chest with diamond details" class="chest">
           </div>
-          <script>
-          function before() {
-            document.getElementsByClassName(".overlay-chest").style.display = "block";
-          }
-          function after() {
-            document.getElementsByClassName(".overlay-chest").style.display = "block";
-          }
-          </script>
         </section>
         <section id="pack">
           <div class="column">
@@ -101,7 +93,13 @@
           </div>  
         </section>
         <section class="section4">
-          <div class="half">
+          <video autoplay muted loop id="myVideo" class="desktop">
+            <source src="video/BackroundVideo.mp4" type="video/mp4">
+          </video>
+          <video autoplay muted loop id="myVideo" class="mobile">
+            <source src="video/BackroundVideo.mp4" type="video/mp4">
+          </video>
+          <div class="after-video">
             <h2>Beyond the expected</h2>
             <p>Go beyond just owning a simple NFT. Own the actual planets on which Wolfirions thrive.</p>
             <p>The various planets on which the Wolfirions live can vary from the most hospitable places to the most harsh environments. Be the ruler of your planet. Decide on the perks found on your planet and gather as many wolf residents as you can. It's all up to you!</p>

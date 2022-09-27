@@ -36,7 +36,7 @@ html {
 
 body {
   background-color: #0C0C0C;
-  background-image: url(../images/stars.png);
+  background-image: url("../images/stars.png");
   font-family: 'adventureregular';
   overflow-x: hidden;
   width: 100%;
@@ -60,6 +60,9 @@ body {
 }
 h2, h4 {
   letter-spacing: 5px;
+}
+.mobile {
+  display: none;
 }
 
 
@@ -167,6 +170,7 @@ main {
   height: 100%;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  overflow-x: hidden;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
   scroll-snap-stop: always;
@@ -365,6 +369,23 @@ textarea:focus, input:focus{
 }
 .visible {
   display: block;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.after-video {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 20px;
+}
+.section4 {
+  margin: 0;
 }
 /***************************
 *****  GET STARTED  ********

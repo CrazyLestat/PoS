@@ -65,6 +65,15 @@
       .temp-wolf {
         height: 30vh;
     }
+    .half-section {
+        background: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        padding: 20px;
+        z-index: -10;
+    }
+    .after-video {
+        width: 90%;
+    }
 }
 
 @media (max-width: 700px) {
@@ -99,6 +108,17 @@
     }
     #button-previous {
         opacity: 1;
+    }
+    .after-video, #myVideo {
+        position: absolute;
+    }
+    #myVideo {
+        width: 99%;
+        height: auto;
+        top: 0;
+    }
+    .section4 {
+        padding: 0;
     }
     
 }
@@ -137,6 +157,20 @@
 @media (max-width: 380px) {
     #gif {
         height: 30%;
+        
     }
 }
 
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
+        width: auto;
+        height: 95%;
+    }
+}

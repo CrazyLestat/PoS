@@ -63,26 +63,7 @@ function changeImg() {
      imgArr[0].classList.add('active-img');
  }
 }
-
-function changeChest() {
-  if (chestsDivs[0].classList.contains('active')) {
-    chestsDivs[0].classList.remove('active');
-    chestsDivs[1].classList.add('active');
-} 
- else if (chestsDivs[1].classList.contains('active')) {
-  chestsDivs[1].classList.remove('active');
-  chestsDivs[2].classList.add('active');
- }
- else {
-  chestsDivs[2].classList.remove('active');
-  chestsDivs[0].classList.add('active');
- }
-}
 // Add function on click to change the class of the images so we can see a different picture with each click
-previous.addEventListener('click', () => {
-  changeChest();
-})
-
 let timer2 = setInterval(changeImg, 4000);
 
 function complete2() {
