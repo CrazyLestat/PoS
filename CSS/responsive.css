@@ -65,12 +65,6 @@
       .temp-wolf {
         height: 30vh;
     }
-    .half-section {
-        background: rgba(0, 0, 0, 0.3);
-        width: 100vw;
-        padding: 20px;
-        z-index: -10;
-    }
     .after-video {
         width: 90%;
     }
@@ -86,6 +80,17 @@
     }
     #home-slider {
         justify-content: space-between;
+    }
+    .section6 {
+        margin: 0 10px;
+        justify-content: space-between;
+    }
+    .vending-machine {
+        width: 50%;
+        left: 30px;
+    }
+    .half-section {
+        padding-top: 80px;
     }
     .metamask-icon {
         margin: 0 auto 30% auto;
@@ -143,6 +148,9 @@
     .slide-text {
         margin: 50px 0 30px 0;
       }
+      .half-section {
+        margin-right: 0;
+    }
 }
 @media (max-height: 700px) and (min-width: 500px) {
     .title, h2 {

@@ -354,7 +354,7 @@ textarea:focus, input:focus{
   width: 400px;
 }
 .half-section {
-  margin: 0 40vw 0 0;
+  margin-right: 40vw;
 }
 
 .overlay-chest {
@@ -386,6 +386,7 @@ textarea:focus, input:focus{
 }
 .section4 {
   margin: 0;
+  padding-bottom: 30px;
 }
 /***************************
 *****  GET STARTED  ********
