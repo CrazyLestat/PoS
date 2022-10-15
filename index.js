@@ -103,7 +103,6 @@ function changeChest() {
   if (chestsDivs[0].classList.contains('active')) {
     chestsDivs[0].classList.remove('active');
     chestsDivs[1].classList.add('active');
-    console.log(chestsDivs[1]);
 } 
 else if (chestsDivs[1].classList.contains('active')) {
   chestsDivs[1].classList.remove('active');
@@ -123,3 +122,4 @@ function complete3() {
   clearInterval(timer3);
   timer3 = null;
 }
+

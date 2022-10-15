@@ -30,20 +30,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  height: 100vh;
-}
+
 
 body {
+  height: 100vh;
   background-color: #0C0C0C;
   background-image: url("../images/stars.png");
   font-family: 'adventureregular';
-  overflow-x: hidden;
-  width: 100%;
-  height: 100vh;
   color: #e3e0c5;
-  scroll-behavior: smooth;
   position: relative;
+  overflow: hidden;
 }
 
 .column, .row {
@@ -161,27 +157,23 @@ header {
 *****  SECTIONS  ***********
 ***************************/
 
-main {
-  margin:0px;
-  height: 100vh;
-  position: relative;
-}
 .container {
+  width: 100%;
   height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
   scroll-snap-stop: always;
+
 }
 .container::-webkit-scrollbar { 
   display: none;  /* Safari and Chrome */
 }
 section {
-  height: 100%;
+  height: 100vh;
+  position: relative;
   scroll-snap-align: center;
-  scroll-snap-stop: always;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -190,7 +182,6 @@ section {
   font-weight: bold;
   margin: 0 60px 0 120px; 
   opacity: 0;
-  position: relative;
 }
 .is-visible {
   opacity: 1;
